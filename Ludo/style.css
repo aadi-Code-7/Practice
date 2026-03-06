@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.board{
+    background-color: gray;
+    border: 4px solid black;
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 2fr 1fr 2fr;
+}
+.box{
+    border: 2px solid black;
+}
+
+.Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Board{
+    border: 1px solid black;
+    height: 80%;
+    width: 80%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap : 2rem;
+
+    background-color: white;
+}
+.dice{
+    border-radius: 50%;
+    margin: 15px;
+}
+.red{
+    background-color: rgb(212, 54, 54);
+}
+.Green{
+    background-color: green;
+}
+.Yellow{
+    background-color: rgb(192, 192, 40);
+}
+.Blue{
+    background-color: rgb(46, 46, 173);
+}
+
+
+.path1, .path4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6,1fr);
+}
+.path2, .path3{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.goal{
+    position: relative;
+}
+.triangle{
+    position: absolute;
+    height: 0;
+    width: 0;
+}
+.redTriangle{
+    border-top: 60px solid  transparent;
+    border-bottom: 60px solid  transparent;
+    border-left: 60px solid red;
+    left: 0;
+    top: 0;
+}
+.greenTriangle{
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 60px solid green;
+    top: 0;
+    left: 0;
+}
+.yellowTriangle{
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 60px solid rgb(163, 158, 27);
+    bottom : 0;
+    left: 0;  
+}
+.blueTriangle{
+    border-top: 60px solid  transparent;
+    border-bottom: 60px solid  transparent;
+    border-right: 60px solid rgb(25, 57, 145);
+    right : 0;
+    bottom: 0;
+}
