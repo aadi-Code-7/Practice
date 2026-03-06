@@ -7,7 +7,10 @@ body.addEventListener('click', (e) => {
 
     let colors = ['red', 'green', 'blue', 'orange', 'yellow', 'purple'];
     circle.style.backgroundColor = colors[Math.floor(Math.random()*6)];
-    circle.innerText = "Aditya";
+
+    let text = ['Aditya', 'आदित्य', 'ਆਦਿਤਿਆ', 'أديتيا', 'Адитья', 'आदित्य के बा'] ;
+    circle.innerText = text[Math.floor(Math.random()*6)];
+    
     circle.style.top = `${e.clientY-25}px`;
     circle.style.left = `${e.clientX-25}px`;
 
