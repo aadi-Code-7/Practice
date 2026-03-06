@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vmin;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: white;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: rgba(90, 77, 77, 0.253);
+    height: 100%;
+    width: 50vw;
+    padding: 3rem;
+    border-radius: 2rem;
+}
+.upper{
+    margin-bottom: 5rem;
+    border: 1px solid rgb(206, 201, 201);
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.lower{
+    border: 1px solid rgb(206, 201, 201);
+    border-radius: 2rem;
+    padding: 1rem;
+    height: 100%;
+}
+
+.input{
+    font-size: large;
+    margin: 1rem 1rem 1rem 0;
+}
+input{
+    padding: 1rem;
+    margin: 1rem 1rem 1rem 0;
+    width: 80%;
+    border-radius: 1rem;
+    border: none;
+}
+#addBtn{
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 1rem;
+    border: none;
+}
+#addBtn, .deleteBtn, .doneBtn:hover{
+    cursor: pointer;
+}
+
+.addedTask{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 1rem;
+    font-size: large;
+}
+.para{
+    width: 60%;
+    border-bottom: 1px solid rgb(212, 199, 199);
+    padding: 0.5rem;
+}
+.btn{
+    display: flex;
+    gap: 1rem;
+}
+.deleteBtn{
+    padding: 0.5rem;
+    border: none;
+    color: whitesmoke;
+    background-color: rgb(194, 55, 55);
+}
+
+.doneBtn{
+    padding: 0.5rem;
+    border: none;
+    color: whitesmoke;
+    background-color: rgb(50, 50, 139);
+}
