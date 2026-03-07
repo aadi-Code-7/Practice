@@ -10,7 +10,8 @@
     height: 10vmin;
     width: 100%;
     margin-bottom: 1rem;
-    background-color: white;
+    background-color: #515151;
+    color: #d8d8d8;
 }
 .main{
     display: flex;
@@ -88,4 +89,27 @@ input{
     border: none;
     color: whitesmoke;
     background-color: rgb(50, 50, 139);
+}
+.taskList{
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.taskList::-webkit-scrollbar{
+    width: 10px;
+}
+
+.taskList::-webkit-scrollbar-track{
+    background: #6e6565;
+    border-radius: 1rem;
+}
+
+.taskList::-webkit-scrollbar-thumb{
+    background: #959595;
+    border-radius: 5px;
+}
+
+.taskList::-webkit-scrollbar-thumb:hover{
+    background: #a4a3a3;
 }
